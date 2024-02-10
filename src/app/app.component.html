@@ -1,0 +1,140 @@
+<div class='header'>
+      <h4><button>Niket's Portfolio</button></h4>
+     <a (click)="aboutME()">About me</a>
+     <a (click)="openResume()">Resume</a>
+</div>
+<div *ngIf="!showAboutME">
+    <div class="content-wrapper">
+     
+        <img src="../assets/images/Niket'profile.jpg" width="30%" height="30%"  alt="">
+    
+      <div class="summary">
+        <label>Summary</label>
+        <p>Greetings, Techies! 🚀 Welcome to my digital space! I'm Niket Shah, a 22-year-old Software Engineer with 1.5 years of valuable experience. As a full-stack developer, I've honed my skills in both frontend and backend development. Your presence here is truly appreciated. Feel free to explore my journey and connect with me. Let's embark on this tech-filled adventure together! 🖥️✨</p>
+      </div>
+    </div>
+    <div class="content-wrapper">
+    <div class="projects">
+      <label>Portfolio Projects</label>
+      <div>
+        <label>Tech Blog</label>
+        <p>I am excited to present my tech blog website—a culmination of the dedication and effort I've poured into mastering backend development with Java. This project, intricately crafted using Java, Servlet, JSP, and JDBC.
+          Within this platform, users can seamlessly register, log in, and share their insights through engaging blog posts. The robust features, including user authentication and session management.
+          This website is more than a collection of code; it signifies my devotion to continuous improvement and a passion for creating meaningful, user-centric applications.        </p>
+      </div>
+      <div>
+        <label>Ecommerce website</label>
+        <p>I have developed an ecommerce website where users can register and sign up. Users have the ability to add products to their cart, remove items from the cart, and ultimately proceed to order the products. Additionally, the admin interface allows administrators to add products and categorize them accordingly, such as placing an "Asus Laptop" under the "Laptop" category. This website is built using Java, JDBC, Servlets, and JSP.</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="skills-wrapper">
+        <label class="section-title">Skills</label>
+        <div class="skills-container">
+          <div class="skills-category">
+            <h3>Frontend:</h3>
+            <ul class="skills-list">
+              <li>JavaScript</li>
+              <li>Angular</li>
+              <li>Typescript</li>
+              <li>HTML/CSS</li>
+            </ul>
+          </div>
+          <div class="skills-category">
+            <h3>Backend:</h3>
+            <ul class="skills-list">
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>JSP/Servlet</li>
+              <li>JDBC</li>
+            </ul>
+          </div>
+          <div class="skills-category">
+            <h3>Database:</h3>
+            <ul class="skills-list">
+              <li>Relational database</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="hobbies-wrapper">
+        <label class="section-title">Hobbies</label>
+        <div class="hobbies-container">
+          <div class="hobbies-category">
+            <ul class="hobbies-list">
+              <li>
+                <i class="fas fa-code"></i>
+                <span>Coding</span>
+              </li>
+              <li>
+                <i class="fas fa-music"></i>
+                <span>Music</span>
+              </li>
+              <li>
+                <i class="fas fa-baseball-ball"></i>
+                <span>Cricket</span>
+              </li>
+              <li>
+                <i class="fas fa-flask"></i>
+                <span>Research</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div *ngIf="showAboutME">
+  <div class="about-me">
+    <div class="introduction">
+      <h2>I'm Niket Shah</h2>
+      <p class="description">
+        A passionate software engineer driven by a love for crafting innovative solutions. With expertise spanning Java, Spring Boot, Angular, JavaScript, and TypeScript, I thrive on the art of coding and the challenge of building feature-rich applications. As a dedicated developer, I find joy in translating ideas into reality and creating seamless user experiences. My commitment to excellence fuels my desire to continuously learn and grow in the ever-evolving field of software development.
+      </p>
+    </div>
+    
+    <div class="blog-post">
+      <h2 class="post-title">My Journey</h2>
+      <div class="post-content">
+        <p>I am a Computer Science Engineer, having graduated from Babaria Institute of Technology, Vadodara. My journey into the world of programming began during my first year of engineering when I developed a keen curiosity to explore coding and its intricacies. With the guidance of exceptional mentors, I delved into my first programming language, C, which laid the foundation for my subsequent learning.</p>
+      <p>As I progressed through my academic journey, I delved deeper into various aspects of computer science. I explored topics such as Data Structures, Algorithms, and Database Management Systems (DBMS), honing my skills and expanding my knowledge base.</p>
+      <p>In the pivotal third year of my engineering journey, I embarked on a new learning path by mastering Java and its advanced concepts, including JSP, Servlets, JDBC, and Spring. This newfound expertise not only enriched my understanding of software development but also opened doors to exciting opportunities.</p>
+      <p>During this period, I secured an internship where I could apply my skills in a practical setting, gaining invaluable hands-on experience and insights into real-world projects. This internship experience further fueled my passion for software engineering and solidified my determination to pursue it as a career.</p>
+      <p>While pursuing my academic and professional endeavors, I also ventured into preparing for the Graduate Aptitude Test in Engineering (GATE), aiming to further enhance my knowledge and credentials. Though I pursued this path for a while, I eventually decided to focus on my career in software development after attempting one exam.</p>
+      <p>Currently, I have accumulated 1.5 years of valuable experience as a software engineer, where I continue to leverage my skills, creativity, and passion to contribute meaningfully to software projects and drive innovation in the field.</p>
+      </div>
+    </div>
+    
+    <div class="skills-strengths">
+      <h2 class="section-title">Skills and Strengths</h2>
+      <div class="skills-strengths-content">
+        <p class="skill-description">I bring a versatile skill set to the table, proficient in both frontend and backend development. My expertise includes Java, Spring Boot, JavaScript, Angular, and TypeScript, empowering me to contribute effectively to multifaceted projects.</p>
+      <p class="skill-description">With hands-on experience in Agile methodologies, I excel in dynamic team environments, adept at adapting to evolving project scopes and collaborating seamlessly with colleagues.</p>
+      <p class="skill-description">One of my strengths lies in my meticulous understanding of project requirements, ensuring clarity and alignment throughout the development process. I possess the agility to swiftly address bugs and issues, employing strategic problem-solving techniques to maintain project momentum and quality standards.</p>
+      <p class="skill-description">Furthermore, I pride myself on my quick adaptability and flexibility, readily embracing new requirements and tasks to drive project success.</p>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+<footer class="footer">
+  <div class="footer-content">
+      <ul class="footer-nav">
+          <li><a (click)="aboutME()">About <menu></menu></a></li>
+          <li><a  (click)="openResume()">Resume</a></li>
+      </ul>
+      <div class="copyright">
+          &copy; 2024 Niket Shah. All rights reserved.
+      </div>
+      <div class="social-icons">
+          <a href="https://www.linkedin.com/in/niket-shah-4427701a5" class="fab fa-linkedin"></a>
+          <a href="https://github.com/NIKET79" class="fab fa-github"></a>
+          <a href="https://x.com/NiketSh95470779?t=XLPJvayOqr96lkl-5M6ahQ&s=09" class="fab fa-twitter"></a>
+          <a href="https://www.instagram.com/79.niket/?igsh=MXJoejYxYzFxdmhqaQ%3D%3D" class="fab fa-instagram"></a>
+          <a href="https://www.instagram.com/79.niket/?igsh=MXJoejYxYzFxdmhqaQ%3D%3D" class="fas fa-envelope"></a>
+      </div>
+  </div>
+</footer>

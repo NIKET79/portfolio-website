@@ -1,0 +1,385 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+body{
+  background-color: #F8F8F8;
+ 
+  color: #333333;
+}
+.header button{
+  background: none;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;  
+  /* border: 2px solid #CCCCCC;
+  border-radius: 11px; */
+  /* background: #AED6F1 ;
+  color: #FFFFFF; */
+  background-color: #294166;
+  color: #FFFFFF;
+  padding: 10px;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header a{
+  color: #FFFFFF;
+  text-decoration: none;
+  /* background-color: #1abc9cDB; */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.header-links{
+    display: flex;
+    justify-content: space-between;
+}
+.header a:hover {
+  background: #2C7A95;
+}
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background:  #AED6F1 ; */
+    background-color: #ffffff;
+    border: 5px solid grey;
+    border-radius: 11px;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.content-wrapper img{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    
+}
+.content-wrapper .summary{
+    align-items: center;
+    color: #333333;
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px
+    
+}
+.content-wrapper label{
+    width: 100%;
+    font-weight: bold;
+}
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.skills-wrapper{
+    background:  #ffffff ;
+}
+.skills-wrapper {
+    margin: 10px auto;
+    background-color: #ffffff ;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid grey;
+    border-radius: 11px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    font-weight: bold;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skills-category {
+    width: 30%;
+  }
+
+  .skills-category h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .skills-list li {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+}
+.project-carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.project-carousel img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  transition: transform 1s ease;
+}
+
+.carousel-container {
+  display: flex;
+}
+
+.projects{
+  background-color: #e8e3d3;
+  color: #333333;
+  font-size: 18px;
+  padding-top: 30px;
+  padding: 0px 15px;
+  text-align: justify;
+  font-weight: normal;
+
+}
+.carousel-button {
+  cursor: pointer;
+  background-color: #3498DB;
+  color: #FFFFFF;
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+    /* .header a {
+        display: none;
+    } */
+
+    .burger-menu {
+        display: block;
+    }
+
+    .header-links {
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: #AED6F1 ;
+        border: 2px solid #CCCCCC;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-links a {
+        display: block;
+        padding: 10px 20px;
+        text-align: right;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .content-wrapper {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      text-align: left;
+      background-color: #ffffff;
+      border: 2px solid white;
+      border-radius: 11px;
+      font-weight: bold;
+      color: #333333;
+      border: 5px solid grey;
+      border-radius: 13px;
+
+    }
+    .content-wrapper img{
+        width: 20%;
+        height: auto;
+        padding: 20px;
+    }
+}   
+
+
+
+/* Footer Background Color */
+.footer {
+  background-color: #294166;
+  color: #ffffff; /* Font color for better contrast */
+  padding: 30px 0; /* Adjust padding as needed */
+}
+
+/* Footer Content Styling */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Footer Navigation Styling */
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust spacing between links */
+}
+
+.footer-nav li:last-child {
+  margin-right: 0; /* Remove margin for the last link */
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Copyright Styling */
+.copyright {
+  margin-top: 20px; /* Adjust spacing */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+  margin-top: 20px; /* Adjust spacing */
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px; /* Adjust spacing between icons */
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+/* Wrapper for the Hobbies section */
+.hobbies-wrapper {
+  margin-top: 20px;
+    border: 5px solid grey;
+    border-radius: 9px;
+}
+
+/* Title of the Hobbies section */
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; /* Dark color for the title */
+}
+
+/* Container for the hobbies */
+.hobbies-container {
+  margin-top: 10px;
+}
+
+/* Category of hobbies */
+.hobbies-category {
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* List of hobbies */
+.hobbies-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Individual hobby item */
+.hobbies-list li {
+  margin: 0 15px;
+  font-size: 16px;
+  color: #666; /* Dark gray color for the hobbies */
+}
+
+/* Icon styles */
+.fa {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.about-me {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.introduction, .blog-post, .skills-strengths {
+  margin-bottom: 40px;
+}
+
+.introduction h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.introduction .description {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.post-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.post-content, .skills-strengths-content {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.post-content p, .skills-strengths-content p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
